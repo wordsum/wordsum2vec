@@ -10,3 +10,4 @@ matplotlib==2.0.2
 scipy==0.19.1
 gensim==2.3.0
 pandas==0.20.3
+flask==0.12.2
