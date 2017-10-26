@@ -8,6 +8,7 @@ def get_permutations():
 
     string_arg = request.args.get('file')
 
+    return str(string_arg)
 
 
 
