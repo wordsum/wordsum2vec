@@ -15,7 +15,7 @@ import wordsum.read.pipelines.pipeline_model_story_plot as pipeline_plot_story
 
 TEST_DIR = os.path.realpath('./') + '/data/train/plot/The_Detective_Store'
 TEST_FILE = os.path.realpath('./') + '/data/train/plot/The_Detective_Store/0001.json'
-TEST_LOCAL_MODEL_DUMP  = os.path.realpath('./') + '/data/models/The_Detective_Store/'
+TEST_LOCAL_MODEL_DUMP  = os.path.realpath('./') + '/data/models/The_Detective_Store'
 
 
 def test_process_file():
