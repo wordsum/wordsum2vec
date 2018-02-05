@@ -15,19 +15,24 @@ import wordsum.read.pipelines.pipeline_model_story_plot as pipeline_plot_story
 
 TEST_DIR = os.path.realpath('./') + '/data/train/plot/The_Detective_Store'
 TEST_FILE = os.path.realpath('./') + '/data/train/plot/The_Detective_Store/0001.json'
-TEST_LOCAL_MODEL_DUMP  = os.path.realpath('./') + '/data/models/The_Detective_Store'
+TEST_LOCAL_MODEL_DUMP  = os.path.realpath('./') + '/data/train/plot/The_Detective_Store'
+TEST_FILE_DIALOG = os.path.realpath('./') + '/data/train/plot/The_Detective_Store/0010.json'
 
+#def test_process_file():
 
-def test_process_file():
-
-    story = pipeline_plot_story.process(TEST_FILE, TEST_LOCAL_MODEL_DUMP)
+ #   story = pipeline_plot_story.process(TEST_FILE, TEST_LOCAL_MODEL_DUMP)
 
     #assert ['towel', 'around', 'neck', 'is'] == story[0]
 
 
-def test_process_dir():
+#def test_process_dir():
 
-    story = pipeline_plot_story.process(TEST_DIR, TEST_LOCAL_MODEL_DUMP)
+ #   story = pipeline_plot_story.process(TEST_DIR, TEST_LOCAL_MODEL_DUMP)
+
+
+def test_process_file_dialog():
+
+    story = pipeline_plot_story.process(TEST_FILE_DIALOG, TEST_LOCAL_MODEL_DUMP)
 
 
 

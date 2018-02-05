@@ -52,6 +52,22 @@ def get_paragraph_model_narrator_sentences(paragraph_model):
 
 
 '''
+Get narrator from all of the text model.
+
+This returns a list of list paragraphs of list sentences.
+'''
+def get_text_model_dialog_paragraphs(text_model):
+    logging.debug("Getting all the narrator sentences of a text model")
+    paragraphs = []
+
+    for paragraph_model in text_model['paragraphStates']:
+        if paragraph_model is not None:
+            paragraphs.append(get_paragraph_model_dialog_sentences(paragraph_model))
+
+    return paragraphs
+
+
+'''
 Get the the narrator sentence from a paragraph.
 '''
 def get_paragraph_model_dialog_sentences(paragraph_model):

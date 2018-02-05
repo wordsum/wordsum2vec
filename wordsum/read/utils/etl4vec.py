@@ -29,7 +29,7 @@ Replace punctuation.
 def replace_punctuation_sentence(sentence):
     logging.debug("Grooming :", sentence)
 
-    list_replace_no_space = ['\\u0027','\\u003c','\\u003e','|','.',',',':',';','?','<','>']
+    list_replace_no_space = ['\\u0027','\\u003c','\\u003e','|','.',',',':',';','?','<','>','\'\'']
 
     for item in list_replace_no_space:
         sentence = sentence.replace(item, '')
