@@ -70,16 +70,16 @@ def process(file, path_model_dump):
         dialog_list = etl4vec.list_story_lists(dialog)
 
         # Print all the narrative to file.
-        test_data = open(os.path.splitext(f)[0] + '.narrative', 'w')
+        test_narrative = open(os.path.splitext(f)[0] + '.narrative', 'w')
         for items in story_list:
             line = ' '.join(items)
-            test_data.write("%s\n" % line)
+            test_narrative.write("%s\n" % line)
 
         # Print all the dialog (without carrying about character
-        test_data = open(os.path.splitext(f)[0] + '.dialog', 'w')
+        test_dialog = open(os.path.splitext(f)[0] + '.dialog', 'w')
         for items in dialog_list:
             line = ' '.join(items)
-            test_data.write("%s\n" % line)
+            test_dialog.write("%s\n" % line)
 
         # Get the origin file.
         file_basename = utilities.get_file_basename(f)

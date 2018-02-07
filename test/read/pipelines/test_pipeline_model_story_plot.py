@@ -25,9 +25,9 @@ TEST_FILE_DIALOG = os.path.realpath('./') + '/data/train/plot/The_Detective_Stor
     #assert ['towel', 'around', 'neck', 'is'] == story[0]
 
 
-#def test_process_dir():
+def test_process_dir():
 
- #   story = pipeline_plot_story.process(TEST_DIR, TEST_LOCAL_MODEL_DUMP)
+    story = pipeline_plot_story.process(TEST_DIR, TEST_LOCAL_MODEL_DUMP)
 
 
 def test_process_file_dialog():

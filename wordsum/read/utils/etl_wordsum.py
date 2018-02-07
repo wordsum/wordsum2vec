@@ -61,7 +61,7 @@ def get_text_model_dialog_paragraphs(text_model):
     paragraphs = []
 
     for paragraph_model in text_model['paragraphStates']:
-        if paragraph_model is not None:
+        if paragraph_model['dialog'] == True:
             paragraphs.append(get_paragraph_model_dialog_sentences(paragraph_model))
 
     return paragraphs
